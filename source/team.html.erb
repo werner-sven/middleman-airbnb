@@ -1,0 +1,24 @@
+---
+title: Le Wagon - Middleman - About
+---
+
+<div id="about">
+  <div class="about-content">
+    <h1>This is a fucking awesome team by</h1>
+    <ul class="list-inline">
+      <% data.teammates.each do |teammate| %>
+        <li>
+          <% link_to "https://kitt.lewagon.com/alumni/#{teammate.github_nickname}", target: "_blank" do %>
+            <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{teammate.github_nickname}", class: "img-circle" %>
+          <% end %>
+          <h2><%= teammate.name %></h2>
+          <p>
+            <% link_to "https://github.com/#{teammate.github_nickname}", target: "_blank" do %>
+              <i class="fa fa-github"></i> <%= teammate.github_nickname %>
+            <% end %>
+          </p>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+</div>

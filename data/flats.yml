@@ -1,0 +1,15 @@
+- city: 'shanghai'
+  country: "China"
+  owner: 'ssaunier'
+  rating: 3
+  description: 'Nice FLat - everybody loves it'
+- city: 'berlin'
+  country: "Deutschland"
+  owner: 'Papillard'
+  description: "Lovely place - you will love it"
+  rating: 5
+- city: 'paris'
+  country: "France"
+  owner: 'jad'
+  description: "Best CIty ever"
+  rating: 4
